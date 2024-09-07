@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devio Dining</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header data-aos="fade-down">
+        <nav>
+            <div class="logo">Devio Dining</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#reservations">Reservations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div data-aos="fade-right" class="hero-content">
+            <h1>Welcome to Devio Dining</h1>
+            <p>Where Culinary Art Meets Perfection</p>
+            <a href="#menu" class="btn">Explore Our Menu</a>
+        </div>
+        <div data-aos="fade-left" class="hero-img">
+            <img src="images/heroimg.jpg">
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <h2 data-aos="fade-down">Our Exclusive Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img data-aos="flip-left" class="img1" src="images/img1.jpg" alt="Grilled Salmon">
+                <h3>Grilled Salmon</h3>
+                <p>Perfectly grilled salmon with a touch of lemon.</p>
+                <p class="price">$25</p>
+            </div>
+            <div class="menu-item">
+                <img data-aos="fade-up" class="img2" src="images/img2.jpeg" alt="Steak">
+                <h3>Filet Mignon</h3>
+                <p>Tender steak cooked to perfection.</p>
+                <p class="price">$45</p>
+            </div>
+            <div class="menu-item">
+                <img data-aos="flip-right" class="img3" src="images/img3.jpeg" alt="Pasta">
+                <h3>Truffle Pasta</h3>
+                <p>Rich pasta with creamy truffle sauce.</p>
+                <p class="price">$30</p>
+            </div>
+            <div class="menu-item">
+                <img data-aos="flip-left" class="img4" src="images/img4.jpg" alt="Salad">
+                <h3>Caesar Salad</h3>
+                <p>Classic Caesar with a gourmet twist.</p>
+                <p class="price">$18</p>
+            </div>
+            <div class="menu-item">
+                <img data-aos="flip-right" class="img6" src="images/img6.jpg" alt="Pasta">
+                <h3>Parotta</h3>
+                <p>parotta with chicken gravy.</p>
+                <p class="price">$50</p>
+            </div>
+            <div class="menu-item">
+                <img data-aos="fade-up" class="img5" src="images/img5.jpg" alt="Pasta">
+                <h3>Chicken Biriyani</h3>
+                <p>chicken biriyani with leg piece.</p>
+                <p class="price">$80</p>
+            </div>
+            <div class="menu-item">
+                <img data-aos="fade-up" class="img7" src="images/img7.jpg" alt="Pasta">
+                <h3> Fish chilli</h3>
+                <p>Crispy fried fish chilli.</p>
+                <p class="price">$30</p>
+            </div>
+            <div class="menu-item">
+                <img data-aos="fade-up" class="img8" src="images/img8.jpg" alt="Pasta">
+                <h3> Pepper Chicken</h3>
+                <p>Spicy pepper chicken</p>
+                <p class="price">$80</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2 data-aos="fade-down">About Us</h2>
+        <p data-aos="fade-up">At Devio Dining, we create memorable experiences through exceptional cuisine and warm hospitality. Every dish is a masterpiece, crafted with the finest ingredients to tantalize your taste buds.</p>
+        <p data-aos="fade-up">Our chefs bring a wealth of experience and passion for culinary excellence, ensuring that every meal is a celebration of flavor and artistry.</p>
+    </section>
+
+    <!-- Reservations Section -->
+    <section id="reservations" class="reservations-section">
+        <h2 data-aos="fade-down" class="mrsh">Make a Reservation</h2>
+        <p data-aos="fade-down" class="mrsp">Reserve a table for an unforgettable dining experience.</p>
+        <form data-aos="fade-up-left" id="reservation-form">
+            <input type="text" id="reservation-name" placeholder="Your Name" required>
+            <input type="email" id="reservation-email" placeholder="Your Email" required>
+            <input type="datetime-local" id="reservation-datetime" required>
+            <input type="number" id="reservation-guests" placeholder="Number of Guests" min="1" required>
+            <button type="submit" class="btn">Reserve Now</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2 data-aos="fade-down">Contact Us</h2>
+        <p data-aos="fade-down">Have any questions or special requests? Get in touch with us.</p>
+        <form data-aos="fade-up-right" id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Devio Dining. All rights reserved.</p>
+        
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
